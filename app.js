@@ -3,7 +3,8 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('<h1>My Node App</h1>');
+  console.log('Welcome to the homepage!');
+  res.send('Hello World');
 });
 
 app.listen(5000, () => {
